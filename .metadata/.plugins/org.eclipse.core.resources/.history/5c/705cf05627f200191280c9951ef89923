@@ -1,0 +1,17 @@
+package cn.microservice.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import cn.microservice.pojo.item;
+
+@Controller
+@ResponseBody
+public class ItemController {
+    @RequestMapping(value="/item/{id}")
+	public item queryItemById(Long id)
+	{
+		
+	}
+}

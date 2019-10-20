@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: ￦ﾞﾗ￥﾿ﾗ￧ﾎﾉ
+Build-Jdk: 9.0.4
+Implementation-Title: springcloud-microService-eureksServer
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: cn.springcloud.microService
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/springcloud-
+ microService-eureksServer/
+Created-By: Maven Integration for Eclipse
+

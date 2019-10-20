@@ -1,0 +1,10 @@
+package cn.microservice.pojo;
+//商品实体类
+public class item {
+
+	private Long id;
+	private String title;
+	private String pic;
+	private String desc;
+	private Long price;
+}

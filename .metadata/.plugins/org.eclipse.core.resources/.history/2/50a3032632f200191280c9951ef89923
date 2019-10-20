@@ -1,0 +1,5 @@
+package cn.microservice.service;
+
+public class OrderService {
+
+}

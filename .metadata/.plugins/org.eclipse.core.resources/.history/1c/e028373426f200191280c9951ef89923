@@ -1,0 +1,20 @@
+package cn.microservice.service;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import cn.microservice.pojo.item;
+
+public class itemService {
+
+	//实际：调用dao查询数据库
+	private static final Map<Long,item> MAP=new HashMap<Long,item>();
+	static
+	{
+		MAP.put(1L,new item(1L,"商品1","http://image1","desc1",1000L));
+		MAP.put(1L,new item(2L,"商品2","http://image2","desc2",2000L));
+		MAP.put(1L,new item(3L,"商品1","http://image1","desc1",1000L));
+		MAP.put(1L,new item(4L,"商品1","http://image1","desc1",1000L));
+		MAP.put(1L,new item(5L,"商品1","http://image1","desc1",1000L));
+	}
+}

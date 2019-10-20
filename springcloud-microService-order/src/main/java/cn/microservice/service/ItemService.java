@@ -1,0 +1,33 @@
+package cn.microservice.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import cn.microservice.pojo.item;
+
+@Service
+public class ItemService {
+	@Autowired
+	private RestTemplate restTemplate;
+	@Autowired
+	private DiscoveryClient discoverClient;
+	
+    public item queryItemById(Long id)
+    {
+    	String serviceId="springcloud-microService-item";
+    	List<ServiceInstance> instance= discoverClient.getInstances(serviceId);
+    	if(instance==null||instance.isEmpty())
+    	{
+    		return null;
+    	}
+    	ServiceInstance serviceInstance=instance.get(0);
+    	String url="http://"+serviceInstance.getHost()+":"+serviceInstance.getPort();
+    	item Item= restTemplate.getForObject(url+"/item/"+id, item.class);
+    	return Item;
+    }
+}

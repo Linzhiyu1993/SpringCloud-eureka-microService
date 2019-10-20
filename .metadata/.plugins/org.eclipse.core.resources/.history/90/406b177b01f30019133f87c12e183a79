@@ -1,0 +1,19 @@
+package cn.microservice.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import cn.microservice.pojo.item;
+
+@Service
+public class ItemService {
+	@Autowired
+	private RestTemplate restTemplate;
+	
+    public item queryItemById(Long id)
+    {
+    	item Item= restTemplate.getForObject("http://localhost:8083/item/"+id, item.class);
+        return Item;
+    }
+}

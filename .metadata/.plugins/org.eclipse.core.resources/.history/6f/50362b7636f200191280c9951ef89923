@@ -1,0 +1,13 @@
+package cn.microservice.service;
+
+import org.springframework.stereotype.Service;
+
+import cn.microservice.pojo.item;
+
+@Service
+public class ItemService {
+    public item queryItemById(Long id)
+    {
+    	
+    }
+}

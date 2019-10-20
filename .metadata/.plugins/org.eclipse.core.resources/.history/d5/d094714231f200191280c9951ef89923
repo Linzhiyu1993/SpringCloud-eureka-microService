@@ -1,0 +1,6 @@
+package cn.microservice.pojo;
+
+public class OrderDetail {
+   private String orderid;
+   private item Item;
+}

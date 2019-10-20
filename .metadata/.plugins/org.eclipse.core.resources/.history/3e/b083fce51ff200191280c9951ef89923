@@ -1,0 +1,7 @@
+package cn.microservice.service;
+
+public class itemService {
+
+	//实际：调用dao查询数据库
+	
+}

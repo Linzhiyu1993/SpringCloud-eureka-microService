@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;item.java&apos; to &apos;springcloud-microService-order/src/main/java/cn.microservice.pojo&apos;&#x0D;&#x0A;- Original project: &apos;springcloud-microService-item&apos;&#x0D;&#x0A;- Destination element: &apos;springcloud-microService-order/src/main/java/cn.microservice.pojo&apos;&#x0D;&#x0A;- Original element: &apos;cn.microservice.pojo.item.java&apos;" description="Copy compilation unit" destination="=springcloud-microService-order/src\/main\/java&lt;cn.microservice.pojo" element1="/src\/main\/java&lt;cn.microservice.pojo{item.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1571462757109" units="1" version="1.0"/>
+</session>
